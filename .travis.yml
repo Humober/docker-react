@@ -1,7 +1,11 @@
+language: generic
+
 sudo: reqiured
 services:
   - docker
 
 before_install:
   - docker build -t humober/docker-react -f Dockerfile.dev .
-  
+
+script:
+  - docker run -e CI=true humober/docker-react npm run test
