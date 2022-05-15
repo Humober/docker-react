@@ -14,12 +14,12 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   # elastic beanstalk name
-  app: "runnerdev"
+  app: "runner-dev"
   env: "Runnerdev-env"
   # S3 name
   bucket_name: "elasticbeanstalk-us-east-1-545851479096"
   # Same as app name above
-  bucket_path: "runnerdev"
+  bucket_path: "runner-dev"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
